@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevFolio | Alex — Front-End Developer</title>
+  <meta name="description" content="Personal portfolio of Alex, a Front-End Developer based in Lagos, Nigeria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="site-header">
+    <nav id="main-nav">
+      <a href="index.html" class="nav-logo">DevFolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section" data-reveal>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span id="hero-greeting">Hi, I'm</span>
+          <span class="highlight"> Alex</span><br>
+          <span id="typed-role" class="typed-role"></span><span class="cursor">|</span>
+        </h1>
+        <p class="hero-subtitle">
+          A <strong>Front-End Developer</strong> who builds fast,
+          beautiful, and accessible websites.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View My Work</a>
+          <a href="contact.html" class="btn btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-placeholder" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-reveal>
+      <div class="section-inner">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I'm a passionate front-end developer based in Lagos, Nigeria.
+          I love turning design ideas into clean, fast, accessible code.
+        </p>
+        <blockquote class="personal-quote">
+          "Code is poetry — write it beautifully."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt" data-reveal>
+      <div class="section-inner">
+        <h2 class="section-title">My Skills</h2>
+        <ul class="skills-list">
+          <li class="skill-tag">HTML5</li>
+          <li class="skill-tag">CSS3</li>
+          <li class="skill-tag">JavaScript</li>
+          <li class="skill-tag">Responsive Design</li>
+          <li class="skill-tag">Git &amp; GitHub</li>
+          <li class="skill-tag">Accessibility</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <p>&copy; <span class="footer-year"></span> DevFolio. Built with &#10084;</p>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hello@devfolio.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
