@@ -6,7 +6,7 @@
 
 ## About This Course
 
-**Instructor:** Bizmarrow IT Training  
+**Instructor:** ULTIMATE  
 **Contact:** ultimatefaloe@gmail.com  
 **Level:** Beginner → Intermediate  
 **Method:** Build-Along — every concept is immediately applied to a real project  
@@ -60,7 +60,7 @@ devfolio/
 
 ## About the Creator
 
-**Bizmarrow IT Training** is a technology education company focused on practical, career-ready IT skills for students and young professionals in Nigeria and beyond. Our courses emphasise learning by doing — students build real projects from day one, not toy examples.
+**ULTIMATE** is a technology education company focused on practical, career-ready IT skills for students and young professionals in Nigeria and beyond. Our courses emphasise learning by doing — students build real projects from day one, not toy examples.
 
 Our front-end developer programme covers the three core languages of the web: HTML, CSS, and JavaScript. Graduates leave with a working portfolio website they built with their own hands, and the knowledge to build many more.
 
@@ -2222,5 +2222,5 @@ Guard:       element?.property  |  value ?? fallback
 
 ---
 
-*DevFolio Build-Along Course — Bizmarrow IT Training*  
+*DevFolio Build-Along Course — ULTIMATE*  
 *✉ ultimatefaloe@gmail.com*
