@@ -90,7 +90,7 @@ ul   { list-style: none; }
 }
 
 .btn-primary:hover {
-  background: #4338CA;
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
 }
 
@@ -145,7 +145,7 @@ ul   { list-style: none; }
 #site-footer {
   text-align: center;
   padding: 40px 24px;
-  background: #060D1A;
+  background: var(--color-footer-bg);
   color: var(--color-muted);
   border-top: 1px solid rgba(99, 102, 241, 0.2);
 }
