@@ -66,6 +66,8 @@ Our front-end developer programme covers the three core languages of the web: HT
 
 📧 ultimatefaloe@gmail.com
 
+## Course proeject
+https://ultimatefaloe.github.io/devfolio/
 
 ## Visit link for usage
 https://ultimatefaloe.github.io/frontend-development-fundamentals-v1/
