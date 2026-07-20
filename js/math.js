@@ -1,22 +1,25 @@
-console.log(Math.round(3.4))
-console.log(Math.floor(3.9))
-console.log(Math.ceil(3.1))
-console.log(Math.abs(-5))
+// console.log(Math.round(3.4))
+// console.log(Math.floor(3.9))
+// console.log(Math.ceil(3.1))
+// console.log(Math.abs(-5))
 
-console.log(Math.max(1, 5, 3, 9, 2))
-console.log(Math.min(1, 5, 3, 9, 2))
+// console.log(Math.max(1, 5, 3, 9, 2))
+// console.log(Math.min(1, 5, 3, 9, 2))
 
-console.log(Math.random())
-console.log(Math.sqrt(16))
+// console.log(Math.random()) // generate random number btw 0 and 1 (0.999999)
+// console.log(Math.sqrt(16))
 
-const stringValue = "1000"
+const randomNumBtw0And100 = Math.random() * 100;
+// console.log(Math.floor(randomNumBtw0And100)) // generate random number btw 0 and 100
+
+const stringValue = "1000";
 
 // conversion btw typesconst
-const num1 = stringValue
-const num =  parseInt(stringValue)
+const num1 = stringValue;
+const num = parseInt(stringValue);
 
-console.log(num1 + 8) //
-console.log(num + 8)
+// console.log(num1 + 8) //
+// console.log(num + 8)
 
 // create a function that generate a random number between 1 and 100
 
@@ -33,22 +36,32 @@ console.log(num + 8)
 // array.shift()
 // console.log(array)
 
-const roles = ["admin", "user", "guest"]
+// function diceRoll() {
+//   const diceRool = Math.floor(Math.random() * 6) + 1;
+//   console.log(diceRool);
+// }
 
-const isAdmin = roles.includes("admin")
+function diceRoll() {
+  const diceRoll = Math.floor(Math.random() * 6) + 1;
+  console.log(diceRoll);
+  return diceRoll;
+}
 
-console.log(isAdmin)
+const player1 = diceRoll();
+const player2 = diceRoll();
 
-const roleIndex = roles.indexOf('users')
-console.log(roleIndex)
+console.log(`Player 1 rolled: ${player1}`);
+console.log(`Player 2 rolled: ${player2}`);
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const coinToss = () => {
+  const toast = Math.floor(Math.random() * 2);
+  if (toast === 0) {
+    console.log("Heads");
+  } else {
+    console.log("Tails");
+  }
+};
+coinToss();
 
-const needNum = array.slice(3, 5)
-console.log(needNum)
-
-// array to string
-const arrayToString = array.join("$ ")
-console.log(arrayToString)
-
-
+//Head or Tail 0 and 1
+// statment condition if
