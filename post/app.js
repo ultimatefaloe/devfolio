@@ -1,64 +1,88 @@
-// document.addEventListener('DOMContentLoaded',function(){
+const postData = [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "eum et est occaecati",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "nesciunt quas odio",
+    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "dolorem eum magni eos aperiam quia",
+    "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "magnam facilis autem",
+    "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "dolorem dolore est ipsam",
+    "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "nesciunt iure omnis dolorem tempora et accusantium",
+    "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "optio molestias id quia eum",
+    "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+  }
+]
 
-// } )
+const postCotainer = document.getElementById("post_container");
 
-// Selecting element in our page
+const postCard = (post) => {
+  const { userId, id, title, body } = post;
+  return `
+     <div class="post_card flex bg-green-300 rounded p-2">
+            <div class="flex flex-col gap-2 space-y-2 p-2">
+              <h2 class="font-bold">${title}</h2>
+              <p class="">
+                ${body}
+              </p>
+            </div>
+            <div class="flex justify-center items-start">
+              <span class="py-2 px-3 rounded-full bg-green-400">${id}</span>
+            </div>
+          </div>
 
-// getELementById
-// querySelector
-// querySelectorAll
+  `;
+};
 
-// // changing text
-// const logo = document.getElementById("logo");
-
-// // logo.textContent = 'My Blog';
-// // logo.innerText = "My innertText Blog"
-// logo.innerHTML =
-//   "<img src='https://images.unsplash.com/photo-1682685790910-1f3e7c5b6d8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxvZ3xlbnwwfHwwfHx8&w=1000&q=80' alt='logo' />";
-
-const postSection = document.getElementById("post_container");
-const postCard = document.querySelector(".post_card");
-const postCards = document.querySelectorAll(".post_card");
-
-// changing / adding html content to the post section
-// postSection.innerHTML = `
-//    <div class="post_card flex bg-green-300 rounded p-2">
-//             <div class="flex flex-col gap-2 space-y-2 p-2">
-//               <h2 class="font-bold">eum et est occaecati</h2>
-//               <p class="">
-//                 ullam et saepe reiciendis voluptatem adipisci\nsit amet autem
-//                 assumenda provident rerum culpa\nquis hic commodi nesciunt rem
-//                 tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo
-//                 velit
-//               </p>
-//             </div>
-//             <div class="flex justify-center items-start">
-//               <span class="py-2 px-3 rounded-full bg-green-400">4</span>
-//             </div>
-//           </div>
-// `;
-
-
-// Working with styling in js
-
-// const logo = document.getElementById("logo");
-
-// logo.style.color = "red";
-// logo.style.fontSize = "2rem";
-// logo.style.display = 'none'
-
-const form =  document.querySelector('form')
-
-form.classList.remove('flex')
-form.classList.add('grid', 'place-items-center', 'gap-2', 'grid-cols-1')
-
-const input = document.createElement('input')
-input.type = 'text'
-input.placeholder = 'Enter your name'
-input.classList.add('border','border-gray-300','rounded','p-2')
-input.required = true
-
-// start
-form.prepend(input)
-// end
-form.append(input)
+document.addEventListener("DOMContentLoaded", () => {
+  postData.forEach(post => {
+    postCotainer.innerHTML += postCard(post);
+  })
+});
