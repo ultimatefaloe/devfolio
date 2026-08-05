@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered;
+}
+nav h1 {
+ color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.right a:hover {
+  background-color: #fff;
+  color: orangered;
+  border-radius: 5px;
+}
+
+.hero{
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+
+  /* padding: 20px; */
+
+  padding: 20px 10px;
+  margin: 0 10px;
+
+  /* border: 1px solid #ccc; */
+  /* border-left: 5px solid orangered; */
+  /* border-right: 5px solid orangered; */
+  /* border-bottom: 5px solid orangered; */
+  /* border-top: 5px solid orangered; */
+
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #ccc; */
+
+  border: 1px dashed orangered;
+
+}
