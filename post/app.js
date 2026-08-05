@@ -97,6 +97,21 @@ document.addEventListener("DOMContentLoaded", () => {
     let title = document.getElementById("title").value;
     let body = document.getElementById("body").value;
 
+    if(!title || !body){
+      alert("Please fill in all fields");
+      return;
+    }
+
+    if(title.length < 5){ 
+      alert("Title must be at least 5 characters long");
+      return;
+    }
+
+    if(body.length < 10){
+      alert("Body must be at least 10 characters long");
+      return;
+    }
+
     console.log({ title, body });
 
   });
