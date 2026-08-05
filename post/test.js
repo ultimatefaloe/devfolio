@@ -62,3 +62,16 @@ input.required = true
 form.prepend(input)
 // end
 form.append(input)
+
+
+
+const obj = {
+  id: 1,
+ name: 'John Doe',
+ title: 'My First Post',
+}
+
+const { id, name, title } = obj
+
+
+console.log(id)

@@ -6,7 +6,7 @@
     <title>Shopping List ToDo</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-      .none{
+      .none {
         display: none;
       }
     </style>
@@ -44,6 +44,7 @@
     <main class="flex flex-col justify-center">
       <div class="max-w-5xl p-4 bg-green-100 min-h-screen">
         <form
+          id="post_form"
           action=""
           class="flex items-center gap-2 bg-green-200 p-2 rounded"
         >
@@ -65,7 +66,7 @@
           />
           <button
             type="submit"
-            class="w-fit py-3 px-3 border border-green-500 text-green-900 rounded"
+            class="w-fit py-3 px-3 border border-green-500 text-green-900 rounded cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,10 +84,12 @@
         </form>
 
         <!-- All posts -->
-        <section id="post_container" class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+        <section
+          id="post_container"
+          class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2"
+        >
           <!-- Post card -->
         </section>
-        
       </div>
     </main>
 
