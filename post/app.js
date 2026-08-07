@@ -1,66 +1,67 @@
-const postData = [
-  {
-    userId: 1,
-    id: 1,
-    title:
-      "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-  },
-  {
-    userId: 1,
-    id: 2,
-    title: "qui est esse",
-    body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
-  },
-  {
-    userId: 1,
-    id: 3,
-    title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
-  },
-  {
-    userId: 1,
-    id: 4,
-    title: "eum et est occaecati",
-    body: "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
-  },
-  {
-    userId: 1,
-    id: 5,
-    title: "nesciunt quas odio",
-    body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
-  },
-  {
-    userId: 1,
-    id: 6,
-    title: "dolorem eum magni eos aperiam quia",
-    body: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
-  },
-  {
-    userId: 1,
-    id: 7,
-    title: "magnam facilis autem",
-    body: "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
-  },
-  {
-    userId: 1,
-    id: 8,
-    title: "dolorem dolore est ipsam",
-    body: "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
-  },
-  {
-    userId: 1,
-    id: 9,
-    title: "nesciunt iure omnis dolorem tempora et accusantium",
-    body: "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
-  },
-  {
-    userId: 1,
-    id: 10,
-    title: "optio molestias id quia eum",
-    body: "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
-  },
-];
+// const postData = [
+//   {
+//     userId: 1,
+//     id: 1,
+//     title:
+//       "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+//     body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+//   },
+//   {
+//     userId: 1,
+//     id: 2,
+//     title: "qui est esse",
+//     body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+//   },
+//   {
+//     userId: 1,
+//     id: 3,
+//     title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+//     body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+//   },
+//   {
+//     userId: 1,
+//     id: 4,
+//     title: "eum et est occaecati",
+//     body: "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
+//   },
+//   {
+//     userId: 1,
+//     id: 5,
+//     title: "nesciunt quas odio",
+//     body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+//   },
+//   {
+//     userId: 1,
+//     id: 6,
+//     title: "dolorem eum magni eos aperiam quia",
+//     body: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
+//   },
+//   {
+//     userId: 1,
+//     id: 7,
+//     title: "magnam facilis autem",
+//     body: "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
+//   },
+//   {
+//     userId: 1,
+//     id: 8,
+//     title: "dolorem dolore est ipsam",
+//     body: "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
+//   },
+//   {
+//     userId: 1,
+//     id: 9,
+//     title: "nesciunt iure omnis dolorem tempora et accusantium",
+//     body: "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
+//   },
+//   {
+//     userId: 1,
+//     id: 10,
+//     title: "optio molestias id quia eum",
+//     body: "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
+//   },
+// ];
+import { getPost, createPost } from "./utils.js";
 
 const postCard = (post) => {
   const { userId, id, title, body } = post;
@@ -80,39 +81,50 @@ const postCard = (post) => {
   `;
 };
 
+const renderUi = (post) => {
+  let postData = getPost();
+  if (post) {
+    postCotainer.innerHTML += postCard(post);
+  } else {
+    postData.forEach((post) => {
+      postCotainer.innerHTML += postCard(post);
+    });
+  }
+};
+
 const postCotainer = document.getElementById("post_container");
 const form = document.getElementById("post_form");
 
 document.addEventListener("DOMContentLoaded", () => {
-  // postContainer.innerHTML = postCard();
-
-  postData.forEach((post) => {
-    postCotainer.innerHTML += postCard(post);
-  });
-
-  // form.addEventListener(event_type, callbackFN)
+  renderUi();
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     let title = document.getElementById("title").value;
     let body = document.getElementById("body").value;
 
-    if(!title || !body){
+    if (!title || !body) {
       alert("Please fill in all fields");
       return;
     }
 
-    if(title.length < 5){ 
+    if (title.length < 5) {
       alert("Title must be at least 5 characters long");
       return;
     }
 
-    if(body.length < 10){
+    if (body.length < 10) {
       alert("Body must be at least 10 characters long");
       return;
     }
 
-    console.log({ title, body });
+    // console.log({ title, body });
 
+    const newPost = createPost({ title, body });
+    renderUi(newPost);
+
+    // after post submission, set the input fields back to empty string
+    document.getElementById("title").value = "";
+    document.getElementById("body").value = "";
   });
 });

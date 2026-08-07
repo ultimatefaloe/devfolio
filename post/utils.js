@@ -37,8 +37,10 @@ export const createPost = (post) => {
     createdAt: Date.now(),
     updatedAt: null,
   }
+  console.log(newPostData)
 
   const updatedStorage = [...posts, newPostData]
   const stringifiesUpdatedStorage = JSON.stringify(updatedStorage);
   localStorage.setItem(KEY, stringifiesUpdatedStorage);
+  return newPostData;
 }
