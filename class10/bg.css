@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to bottom left, #2e0ac1, #3671c9, #f3f3f5, #2b4bb7); */
+  background-image: url('../images/lewis.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Navigation style */
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav .left img{
+  width: 100px;
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+}
+.right a{
+  text-decoration: none;
+  color: #2e0ac1;
+  font-weight: bold;
+  text-transform: capitalize;
+}
